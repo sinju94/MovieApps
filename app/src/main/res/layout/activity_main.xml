@@ -11,7 +11,7 @@
       android:padding="8dp"/>
 
     <ProgressBar
-        android:id="@+id/pb_loading"
+        android:id="@+id/pb_loading_bar"
         android:layout_width="72dp"
         android:layout_height="72dp"
         android:padding="8dp" />

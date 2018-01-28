@@ -2,4 +2,5 @@
     <string name="app_name">MovieApps</string>
     <string name="splah_icon_description">Splah Icon</string>
     <string name="error_message">Internet Connection Problem</string>
+    <string name="error_result_data">ErrorResultData</string>
 </resources>
