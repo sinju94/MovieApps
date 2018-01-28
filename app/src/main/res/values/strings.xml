@@ -3,4 +3,8 @@
     <string name="splah_icon_description">Splah Icon</string>
     <string name="error_message">Internet Connection Problem</string>
     <string name="error_result_data">ErrorResultData</string>
+    <string name="toast_favorite_success">You favorite this movie</string>
+    <string name="toast_favorite_failed">Failed to favorite this movie</string>
+    <string name="toast_unfavorite_success">You unfavorite this movie</string>
+    <string name="toast_unfavorite_failed">Failed to unfovorite this movie</string>
 </resources>

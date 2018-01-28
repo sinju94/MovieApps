@@ -8,7 +8,7 @@ import android.provider.BaseColumns;
  */
 
 public class MovieContract {
-    public static final String AUTHORITY = "io.arfirman1402.dev.popularmoviesudacity2";
+    public static final String AUTHORITY = "com.iak.sinju.movieapps";
 
     public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + AUTHORITY);
 

@@ -188,6 +188,7 @@ public class DetailActivity extends AppCompatActivity {
         Log.e(getString(R.string.error_result_data), event.getMessage());
     }
 
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.detail, menu);
@@ -211,18 +212,18 @@ public class DetailActivity extends AppCompatActivity {
                 boolean success = mController.addFavoriteMovie(this, mMovieDetail);
 
                 if (success) {
-                    Snackbar.make(mDetailPoster, "Your Favorite Movie", Snackbar.LENGTH_LONG).show();
+                    Snackbar.make(mDetailPoster, getString(R.string.toast_favorite_success), Snackbar.LENGTH_LONG).show();
                     item.setIcon(ContextCompat.getDrawable(this, R.mipmap.ic_favorite_on));
                 } else {
-                    Snackbar.make(mDetailPoster, "Failed to Favorite This Movie", Snackbar.LENGTH_LONG).show();
+                    Snackbar.make(mDetailPoster, getString(R.string.toast_favorite_failed), Snackbar.LENGTH_LONG).show();
                 }
             } else {
                 boolean success = mController.removeFavoriteMovie(this, mMovieDetail);
                 if (success) {
-                    Snackbar.make(mDetailPoster, "You Unfavorite This Movie", Snackbar.LENGTH_LONG).show();
+                    Snackbar.make(mDetailPoster, getString(R.string.toast_unfavorite_success), Snackbar.LENGTH_LONG).show();
                     item.setIcon(ContextCompat.getDrawable(this, R.mipmap.ic_favorite_off));
                 } else {
-                    Snackbar.make(mDetailPoster, "Failed to You Unfavorite This Movie", Snackbar.LENGTH_LONG).show();
+                    Snackbar.make(mDetailPoster, getString(R.string.toast_unfavorite_failed), Snackbar.LENGTH_LONG).show();
                 }
             }
             return true;
@@ -236,6 +237,7 @@ public class DetailActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
 
     private String getShareContent() {
         String content = "Popular Movies" + "\n";
